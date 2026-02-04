@@ -1,0 +1,14 @@
+# SEARCHING:
+1. Linear Search- Case	    Time     Space
+                  Best	    O(1)      O(1)
+                  Average	  O(n)      O(1)
+                  Worst	    O(n)      O(1)
+
+2. Binary Search- Case	     Time       Space(Iterative)   (Recursive)
+                  Best	     O(1)        O(1)               O(1)
+                  Average    O(log n)    O(1)               O(log n)
+                  Worst	     O(log n)    O(1)               O(log n)
+In the iterative approach, binary search uses a loop and only a fixed number of variables like left, right, and mid.
+So, it requires constant extra space, i.e., O(1). 
+In the recursive approach, each function call is stored in the call stack.
+Since binary search makes log n recursive calls, the space required by the call stack is O(log n
