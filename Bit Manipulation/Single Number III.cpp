@@ -5,14 +5,15 @@ public:
         for(int num : nums)
             xor_all ^= num;
         
-        int mask = xor_all & -xor_all;  // rightmost set bit
+        // safe negation
+        unsigned int mask = xor_all & (unsigned int)(-(long long)xor_all);
         
         int a = 0, b = 0;
         for(int num : nums){
             if(num & mask)
-                a ^= num;    // group 1
+                a ^= num;
             else
-                b ^= num;    // group 2
+                b ^= num;
         }
         
         return {a, b};
