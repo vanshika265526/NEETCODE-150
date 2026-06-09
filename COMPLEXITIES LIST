@@ -11,4 +11,4 @@
 In the iterative approach, binary search uses a loop and only a fixed number of variables like left, right, and mid.
 So, it requires constant extra space, i.e., O(1). 
 In the recursive approach, each function call is stored in the call stack.
-Since binary search makes log n recursive calls, the space required by the call stack is O(log n
+Since binary search makes log n recursive calls, the space required by the call stack is O(log n)
